@@ -4,10 +4,9 @@ on: [push]
 
 jobs:
   build:
-
+    container: mcr.microsoft.com/windows:1903
     runs-on: [windows-latest]
-
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
+    - name: Run setup script
       run: .\setup.ps1
