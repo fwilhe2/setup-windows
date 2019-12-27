@@ -8,5 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run setup script
-      run: .\setup.ps1
+      run: |
+         Set-Alias -Name wget -Value Invoke-WebRequest
+         .\setup.ps1
       shell: pwsh
