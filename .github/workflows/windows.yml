@@ -9,6 +9,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run setup script
       run: |
-         Set-Alias -Name wget -Value Invoke-WebRequest
-         .\setup.ps1
+         docker run mcr.microsoft.com/windows:1903
       shell: pwsh
