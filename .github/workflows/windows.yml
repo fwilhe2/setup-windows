@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   build:
-    container: mcr.microsoft.com/windows:1903
     runs-on: [windows-latest]
     steps:
     - uses: actions/checkout@v1
