@@ -8,6 +8,5 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run setup script
-      run: |
-         docker run mcr.microsoft.com/windows:1903
+      run: .\setup.ps1
       shell: pwsh
